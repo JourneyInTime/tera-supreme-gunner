@@ -55,7 +55,7 @@ module.exports = function supergun(mod) {
 		if(mod.game.me.class !== 'engineer') return
 	})
 
-	mod.hook('S_SPAWN_NPC', 12, event => {
+	mod.hook('S_SPAWN_NPC', 11, event => {
 		if(!enabled) return
 		if(mod.game.me.class !== 'engineer') return		
 		monsters.push({ gameId: event.gameId, loc: event.loc })
