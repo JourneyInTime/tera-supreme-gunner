@@ -44,7 +44,7 @@ module.exports = function supergun(mod) {
 
 	})	
 	
-	mod.hook('S_SKILL_CATEGORY', 4, event => {
+	mod.hook('S_SKILL_CATEGORY', 3, event => {
 		if(!enabled) return
 		if(mod.game.me.class !== 'engineer') return
 		
